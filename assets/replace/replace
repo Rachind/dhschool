@@ -1,0 +1,12 @@
+<?php
+/*$set = $modx->getCollection('modResource', array('template'=>8));
+foreach ($set as $v) {
+    $text = $v->getTVValue('course-results-desc');
+    // в нем нужно найти <h2>Результаты обучения</h2> и <h3>Результаты обучения</h3>
+    // удалить
+    $tmp = str_replace('<h2>Результаты обучения</h2>', "", $text);
+    $new_text = str_replace('<h3>Результаты обучения</h3>', "", $tmp);
+    // записать обратно так:
+    $v->setTVValue('course-results-desc', $new_text);
+}
+*/
