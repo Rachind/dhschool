@@ -1678,7 +1678,9 @@ h3 {
 .testim .swiper-button-next,
 .testim .swiper-button-prev,
 .teachers .swiper-button-next,
-.teachers .swiper-button-prev {
+.teachers .swiper-button-prev,
+.events .swiper-button-next,
+.events .swiper-button-prev {
 	position: static;
 	background: none;
 	width: 26px;
@@ -1694,7 +1696,9 @@ h3 {
 .testim .swiper-button-next svg,
 .testim .swiper-button-prev svg,
 .teachers .swiper-button-next svg,
-.teachers .swiper-button-prev svg {
+.teachers .swiper-button-prev svg,
+.events .swiper-button-next svg,
+.events .swiper-button-prev svg {
 	width: 100%;
 	height: 100%;
 }
@@ -1705,23 +1709,27 @@ h3 {
 .students_works .swiper-button-next:after,
 .students_works .swiper-button-prev:after,
 .testim .swiper-button-next:after,
-.testim .swiper-button-prev:after ,
+.testim .swiper-button-prev:after,
 .teachers .swiper-button-next:after,
-.teachers .swiper-button-prev:after {
+.teachers .swiper-button-prev:after,
+.events .swiper-button-next:after,
+.events .swiper-button-prev:after {
 	display: none;
 }
 .students .swiper-button-prev,
 .graduates .swiper-button-prev,
 .students_works .swiper-button-prev,
 .testim .swiper-button-prev,
-.teachers .swiper-button-prev {
+.teachers .swiper-button-prev,
+.events .swiper-button-prev {
 	transform: rotate(180deg);
 }
 .students .swiper-pagination,
 .graduates .swiper-pagination,
 .students_works .swiper-pagination,
 .testim .swiper-pagination,
-.teachers .swiper-pagination {
+.teachers .swiper-pagination,
+.events .swiper-pagination {
 	position: static;
 	margin: 0 16px;
 }
@@ -1744,7 +1752,8 @@ h3 {
 .graduates .fraction,
 .students_works .fraction,
 .testim .fraction,
-.teachers .fraction {
+.teachers .fraction ,
+.events .fraction {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 1.4em;
@@ -2076,7 +2085,8 @@ h3 {
 .students_works .item.interior .title {
 	background: url(../i/brand-inter.svg) left center no-repeat;
 }
-.students_works .swiper-nav{
+.students_works .swiper-nav,
+.events .swiper-nav{
 	margin-top: 50px;
 }
 .advantages.start h2:before {
@@ -3662,4 +3672,20 @@ footer .contacts {
 }
 .testim.gray .swiper-slide-active .item:before {
 	color: #f2f5f9;
+}
+.events {
+	padding-top: 97px;
+	padding-bottom: 98px;
+}
+.events .title_row {
+	margin-bottom: 60px;
+	position: relative;
+}
+.events .title_row svg {
+	position: absolute;
+	left: -30px;
+	top: -30px;
+}
+.events .title_row h2 {
+	position: relative;
 }

@@ -196,6 +196,20 @@ $(function(){
         },
     });
 
+    var eventsSwiper = new Swiper('#events_slider', {
+        loop: false,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: '.events .swiper-pagination',
+            type: 'fraction'
+        },
+        navigation: {
+            nextEl: '.events .swiper-button-next',
+            prevEl: '.events .swiper-button-prev',
+        }
+    });
+
     var graduatesSwiper = new Swiper('#graduates_slider', {
         loop: true,
         pagination: {
