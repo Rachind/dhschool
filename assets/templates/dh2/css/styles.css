@@ -3232,3 +3232,51 @@ footer .contacts {
 .main_bnr_dod .red_date {
 	margin-bottom: 38px;
 }
+.main_bnr_dod .graphs {
+	position: relative;
+	font-size: 112px;
+	margin-top: 47px;
+}
+.main_bnr_dod .item {
+	width: 1em;
+	height: 1em;
+	position: absolute;
+}
+.main_bnr_dod .item svg {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.main_bnr_dod .item:nth-child(1) {
+	top: 0;
+	right: 2.045em;
+}
+.main_bnr_dod .item:nth-child(2) {
+	top: -0.045em;
+	right: 1em;
+}
+.main_bnr_dod .item:nth-child(3) {
+	top: 0;
+	right: -0.045em;
+}
+.main_bnr_dod .item:nth-child(4) {
+	top: 1em;
+	right: 1em;
+}
+.main_bnr_dod .item:nth-child(5) {
+	top: 1em;
+	right: 0;
+	text-align: right;
+}
+.main_bnr_dod .item:nth-child(6) {
+	top: 2em;
+	right: 1em;
+}
+.main_bnr_dod .item:nth-child(7) {
+	top: 2em;
+	right: 0;
+}
+.main_bnr_dod .item:nth-child(8) {
+	top: 3.23em;
+	right: 0;
+}
