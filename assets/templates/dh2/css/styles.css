@@ -3381,9 +3381,7 @@ footer .contacts {
 	padding-top: 16px;
 	padding-bottom: 28px;
 	font-size: 18px;
-}
-.register .content_row:not(:first-child) {
-	border-top: 1px solid #DBDDE0;
+	border-bottom: 1px solid #DBDDE0;
 }
 .register .box .title {
 	color: #233874;
@@ -3425,4 +3423,108 @@ footer .contacts {
 .register .box.graphd .box_graph {
 	right: auto;
 	left: -152px;
+}
+.register_result {
+	background: #ffcc21;
+	height: 128px;
+	margin-top: 96px;
+}
+.register_result .container,
+.register_result .row {
+	height: 100%;
+}
+.register_result .result_text {
+	color: #233874;
+	font-weight: bold;
+	font-size: 24px;
+}
+.how_it_was {
+	padding-top: 72px;
+}
+.how_it_was h2 {
+	margin-bottom: 48px;
+}
+.how_video_container {
+	width: 850px;
+	height: 482px;
+	position: relative;
+	margin: 0 auto;
+}
+.video_play {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.play_btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -45px 0 0 -45px;
+}
+.video_play:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 109px;
+	background: -moz-linear-gradient(top,  rgba(35,56,116,0) 0%, rgba(35,56,116,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(35,56,116,0) 0%,rgba(35,56,116,1) 100%);
+	background: linear-gradient(to bottom,  rgba(35,56,116,0) 0%,rgba(35,56,116,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00233874', endColorstr='#233874',GradientType=0 );
+}
+.register_result {
+	box-shadow: 0 4px 16px rgba(51,51,51,0.15);
+}
+.how_video_container .caption {
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 109px;
+}
+.how_video_container .caption .title,
+.how_video_container .caption .desc {
+	display: block;
+}
+.how_video_container .caption {
+	padding-left: 26px;
+	padding-right: 26px;
+}
+.how_video_container .caption .title {
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.how_video_container .caption .date {
+	font-size: 14px;
+}
+.how_it_was {
+	padding-bottom: 48px;
+}
+.how_it_was .container {
+	position: relative;
+}
+.how_it_was .container:before,
+.how_it_was .container:after {
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+}
+.how_it_was .container:before {
+	width: 96px;
+	height: 96px;
+	background: #9c40ff;
+	top: 68px;
+	left: -183px;
+}
+.how_it_was .container:after {
+	width: 160px;
+	height: 160px;
+	background: #8fc742;
+	top: 181px;
+	left: -80px;
 }
