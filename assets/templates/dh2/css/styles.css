@@ -3321,12 +3321,30 @@ footer .contacts {
 	color: #72787e;
 	font-size: 18px;
 }
-.boxes .landsh .box_title {
-	background: #8fc742;
-	color: #fff;
+.register .tabnav li.active {
+	color: #233874;
+	font-weight: bold;
+	border-color: #233874;
+}
+.boxes .box_title {
 	font-size: 18px;
 	font-weight: bold;
 	padding: 7px 0;
+	text-transform: uppercase;
+	color: #fff;
+}
+.boxes .landsh .box_title{
+	background: #8fc742;
+}
+.boxes .inter .box_title {
+	background: #FFCC21;
+	color: #233874;
+}
+.boxes .graphd .box_title {
+	background: #9C40FF;
+}
+.boxes .fashion .box_title {
+	background: #FF692E;
 }
 .boxes .col_content,
 .boxes .col_count {
@@ -3339,6 +3357,9 @@ footer .contacts {
 	flex: 0 0 170px;
 	max-width: 170px;
 	text-align: center;
+}
+.register .box {
+	position: relative;
 }
 .register .box .count {
 	border: none;
@@ -3359,8 +3380,10 @@ footer .contacts {
 .register .content_row {
 	padding-top: 16px;
 	padding-bottom: 28px;
-	border-bottom: 1px solid #DBDDE0;
 	font-size: 18px;
+}
+.register .content_row:not(:first-child) {
+	border-top: 1px solid #DBDDE0;
 }
 .register .box .title {
 	color: #233874;
@@ -3373,6 +3396,12 @@ footer .contacts {
 	line-height: 1.4em;
 	color: #72787E;
 }
+.register .box .desc a {
+	color: #233874;
+}
+.register .box .desc_full {
+	display: none;
+}
 .count_b {
 	padding-top: 30px;
 }
@@ -3381,4 +3410,19 @@ footer .contacts {
 	height: 30px;
 	display: inline-block;
 	cursor: pointer;
+}
+.read_more {
+	color: #0601EC;
+	text-decoration: underline;
+}
+.register .box .box_graph {
+	position: absolute;
+	top: 50%;
+	margin-top: -56px;
+	right: -152px;
+}
+.register .box.inter .box_graph,
+.register .box.graphd .box_graph {
+	right: auto;
+	left: -152px;
 }

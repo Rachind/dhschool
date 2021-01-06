@@ -242,6 +242,26 @@ $(function(){
     $('.fancy_close').on('click', function(e){
         e.preventDefault();
         $.fancybox.close();
+    });
+
+    $(document).on('click', '.count_b .m, .count_b .p', function(e){
+        e.preventDefault();
+        var a = $(this).data('action'),
+            inp = $(this).closest('.count_b').find('.count'),
+            inp_val = parseInt(inp.val());
+
+        if(a == 'plus') {
+            inp.val(inp_val + 1);
+        } else if(a == 'minus') {
+            if(inp_val > 0) inp.val(inp_val - 1);
+        }
+
+        inp.trigger('change');
+    });
+
+    $('.read_more').on('click', function(e){
+        e.preventDefault();
+        $(this).parent('.desc').hide().next('.desc_full').show();
     })
 })
 
