@@ -3654,3 +3654,12 @@ footer .contacts {
 	bottom: 30px;
 	right: 15px;
 }
+.gray {
+	background: #f2f5f9;
+}
+.testim.gray .item {
+	background: #fff;
+}
+.testim.gray .swiper-slide-active .item:before {
+	color: #f2f5f9;
+}
