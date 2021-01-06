@@ -2073,7 +2073,7 @@ h3 {
 .students_works .item .what {
 	font-weight: 300;
 }
-.students_works .item.inter .title {
+.students_works .item.interior .title {
 	background: url(../i/brand-inter.svg) left center no-repeat;
 }
 .students_works .swiper-nav{
@@ -3333,14 +3333,14 @@ footer .contacts {
 	text-transform: uppercase;
 	color: #fff;
 }
-.boxes .landsh .box_title{
+.boxes .landscape .box_title{
 	background: #8fc742;
 }
-.boxes .inter .box_title {
+.boxes .interior .box_title {
 	background: #FFCC21;
 	color: #233874;
 }
-.boxes .graphd .box_title {
+.boxes .graphic .box_title {
 	background: #9C40FF;
 }
 .boxes .fashion .box_title {
@@ -3419,8 +3419,8 @@ footer .contacts {
 	margin-top: -56px;
 	right: -152px;
 }
-.register .box.inter .box_graph,
-.register .box.graphd .box_graph {
+.register .box.interior .box_graph,
+.register .box.graphic .box_graph {
 	right: auto;
 	left: -152px;
 }
@@ -3527,4 +3527,130 @@ footer .contacts {
 	background: #8fc742;
 	top: 181px;
 	left: -80px;
+}
+.our_directions {
+	padding-top: 72px;
+}
+.our_directions .item,
+.our_directions .item .row {
+	height: 100%;
+}
+.our_directions .item {
+	border: 1px solid #CACCCF;
+	position: relative;
+}
+.our_directions h2 {
+	margin-bottom: 48px;
+}
+.our_directions .col_item {
+	margin-bottom: 30px;
+	height: 308px;	
+}
+.our_directions .col_content {
+	flex: 0 0 49%;
+	padding: 27px 10px 27px 24px;
+}
+.our_directions .col_image {
+	flex: 0 0 51%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.our_directions .title {
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 1.4em;
+	font-weight: 600;
+	color: #233874;
+	margin-bottom: 27px;
+	padding-left: 52px;
+	position: relative;
+}
+.our_directions .title svg {
+	position: absolute;
+	left: 0;
+	top: 4px;
+}
+.our_directions .fashion .title svg {
+	top: 0;
+}
+.our_directions .online .title svg {
+	top: 10px;
+}
+.our_directions .landscape .cls-1 {
+	fill: #8FC742;
+}
+.our_directions .interior .cls-1 {
+	fill: #FFCC21;
+}
+.our_directions .fashion .cls-1 {
+	fill: #FF692E;
+}
+.our_directions .graphic .cls-1 {
+	fill: #9C40FF;
+}
+.our_directions .online .cls-1 {
+	fill: #22DDFF;
+}
+.our_directions .landscape .btn {
+	background: #8fc742;
+}
+.our_directions .interior .btn {
+	background: #FFCC21;
+	color: #233874;
+}
+.our_directions .fashion .btn {
+	background: #FF692E;
+}
+.our_directions .graphic .btn {
+	background: #9C40FF;
+}
+.our_directions .online .btn {
+	background: #22DDFF;
+	color: #233874;
+}
+.our_directions .col_content .desc {
+	color: #72787e;
+	font-size: 16px;
+	font-family: Roboto, sans-serif;
+	line-height: 1.4em;
+}
+.our_directions .col_content .btn {
+	position: absolute;
+	left: 24px;
+	bottom: 27px;
+	border-radius: 0;
+	text-transform: none;
+}
+.our_directions {
+	padding-bottom: 66px;
+}
+.our_directions .container {
+	position: relative;
+}
+.our_directions .graph_od {
+	position: absolute;
+}
+.our_directions .graphs_od {
+	font-size: 112px;
+}
+.our_directions .graph_od:nth-child(1) {
+	bottom: 218px;
+	right: 488px;
+}
+.our_directions .graph_od:nth-child(2) {
+	bottom: 142px;
+	right: 315px;
+}
+.our_directions .graph_od:nth-child(3) {
+	bottom: 157px;
+	right: 15px;
+}
+.our_directions .graph_od:nth-child(4) {
+	bottom: 30px;
+	right: 142px;
+}
+.our_directions .graph_od:nth-child(5) {
+	bottom: 30px;
+	right: 15px;
 }
