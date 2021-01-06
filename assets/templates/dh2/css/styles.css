@@ -3280,3 +3280,105 @@ footer .contacts {
 	top: 3.23em;
 	right: 0;
 }
+.intro_text {
+	padding-top: 78px;
+	padding-bottom: 52px;
+}
+.textcontent {
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	line-height: 1.3em;
+	color: #72787e;
+}
+.textcontent p:not(:last-child) {
+	margin-bottom: 1.3em;
+}
+.register .title_row,
+.register h2 {
+	position: relative;
+}
+.register .title_row svg {
+	position: absolute;
+	left: -79px;
+	top: -28px;
+}
+.register .subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	color: #72787e;
+	margin-bottom: 34px;
+}
+.register .tabnav {
+	list-style-type: none;
+	margin-bottom: 48px;
+}
+.register .tabnav li {
+	padding: 15px 38px;
+	border: 1px solid #A0A4A8;
+	margin-right: 30px;
+	cursor: pointer;
+	font-weight: 600;
+	color: #72787e;
+	font-size: 18px;
+}
+.boxes .landsh .box_title {
+	background: #8fc742;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 7px 0;
+}
+.boxes .col_content,
+.boxes .col_count {
+	padding: 0 32px;
+}
+.boxes .col_content {
+	flex: 1 1 auto;
+}
+.boxes .col_count {
+	flex: 0 0 170px;
+	max-width: 170px;
+	text-align: center;
+}
+.register .box .count {
+	border: none;
+	padding: 0;
+	width: 50px;
+	text-align: center;
+	color: #233874;
+	font-weight: bold;
+	font-family: Montserrat;
+	font-size: 20px;
+}
+.register .box .date {
+	color: #A0A4A8;
+	font-weight: bold;
+	line-height: 1.4em;
+	margin-bottom: 8px;
+}
+.register .content_row {
+	padding-top: 16px;
+	padding-bottom: 28px;
+	border-bottom: 1px solid #DBDDE0;
+	font-size: 18px;
+}
+.register .box .title {
+	color: #233874;
+	margin-bottom: 8px;
+	font-weight: bold;
+	line-height: 1.4em;
+}
+.register .box .desc {
+	font-family: Roboto;
+	line-height: 1.4em;
+	color: #72787E;
+}
+.count_b {
+	padding-top: 30px;
+}
+.count_b span {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+}
