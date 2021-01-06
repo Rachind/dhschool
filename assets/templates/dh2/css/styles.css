@@ -2563,31 +2563,38 @@ footer .contacts {
 	flex-direction: column;
 	padding-right: 57px;
 }
-.course_first_scr .breadcrumbs {
+.course_first_scr .breadcrumbs,
+.main_bnr_dod .breadcrumbs {
 	margin-bottom: 93px;
 	padding-top: 26px;
 	font-family: Roboto;
 }
-.course_first_scr .breadcrumb {
+.course_first_scr .breadcrumb,
+.main_bnr_dod .breadcrumb {
 	margin: 0;
 	padding: 0;
 	background: none;
 	font-size: 16px;
 	color: #a0a4a8;
 }
-.course_first_scr .breadcrumb a {
+.course_first_scr .breadcrumb a,
+.main_bnr_dod .breadcrumb a {
 	color: #72787e;
 }
-.course_first_scr .breadcrumb a:hover {
+.course_first_scr .breadcrumb a:hover,
+.main_bnr_dod .breadcrumb a:hover {
 	color: #233874;
 }
-.course_first_scr .breadcrumb li {
+.course_first_scr .breadcrumb li,
+.main_bnr_dod .breadcrumb li {
 	white-space: nowrap;
 }
-.course_first_scr .breadcrumb li:not(:last-child) {
+.course_first_scr .breadcrumb li:not(:last-child),
+.main_bnr_dod .breadcrumb li:not(:last-child) {
 	margin-right: 15px;
 }
-.course_first_scr .breadcrumb li:after {
+.course_first_scr .breadcrumb li:after,
+.main_bnr_dod .breadcrumb li:after {
 	display: inline-block;
 	content: '';
 	width: 8px;
@@ -2595,7 +2602,8 @@ footer .contacts {
 	background: url('../i/bread-next.svg');
 	margin-left: 15px;
 }
-.course_first_scr .breadcrumb li:last-child:after {
+.course_first_scr .breadcrumb li:last-child:after,
+.main_bnr_dod .breadcrumb li:last-child:after {
 	display: none;
 }
 .title_section .title_category {
@@ -2621,7 +2629,8 @@ footer .contacts {
 	top: -72px;
 	left: -80px;
 }
-.title_section .title {
+.title_section .title,
+.title_section h1 {
 	font-weight: 700;
 	font-size: 42px;
 	line-height: 1.381em;
@@ -3189,4 +3198,37 @@ footer .contacts {
 	height: 128px;
 	left: 149px;
 	top: 759px;
+}
+.main_bnr_dod {
+	height: 600px;
+	position: relative;
+}
+.main_bnr_dod .bg {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+.main_bnr_dod .breadcrumbs {
+	margin-bottom: 33px;
+}
+.main_bnr_dod .subtitle {
+	font-size: 24px;
+	line-height: 1.3333em;
+	color: #233874;
+	font-weight: bold;
+	margin-bottom: 38px;
+}
+.main_bnr_dod h1 {
+	margin-bottom: 12px;
+}
+.red_date {
+	font-size: 24px;
+	line-height: 1.3333em;
+	color: #be172c;
+	font-weight: bold;
+}
+.main_bnr_dod .red_date {
+	margin-bottom: 38px;
 }
