@@ -2223,6 +2223,7 @@ h3 {
 .next_step h3 {
 	margin-bottom: 40px;
 	color: #9C40FF;
+	text-align: center;
 }
 .ns_row {
 	margin-bottom: 38px;
@@ -3688,4 +3689,42 @@ footer .contacts {
 }
 .events .title_row h2 {
 	position: relative;
+}
+.events .container {
+	position: relative;
+}
+.events .graph {
+	position: absolute;
+}
+.events .graph:nth-child(1) {
+	top: 319px;
+	left: -13px;
+}
+.events .graph:nth-child(2) {
+	top: 155px;
+	right: -41px;
+}
+.events .item {
+	background: #fff;
+	border: 1px solid #E8E8E8;
+	position: relative;
+	height: 427px;
+}
+.events .item .content {
+	padding: 18px 24px 26px;
+}
+.events .item .title {
+	font-weight: bold;
+	font-size: 18px;
+	color: #233874;
+	margin-bottom: 1em;
+	line-height: 1.4em;
+}
+.events .item .desc {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 1.4;
+}
+.events .item:hover .link_more .cls-1 {
+	fill: #233874;
 }
