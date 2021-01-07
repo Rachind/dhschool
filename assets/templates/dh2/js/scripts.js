@@ -8,8 +8,15 @@ $(function(){
             var swiper = new Swiper(".instance-" + indx, {
                 pagination: {
                     el: '.instance-'+indx+' .swiper-pagination'
-                }
+                },
+                slidesPerView: 'auto',
+                spaceBetween: 30
             });
+        });
+
+        $('.box_title').on('click', function(){
+            $(this).toggleClass('active').next('.box_content').slideToggle();
+            $(this).parent('.box').siblings().find('.box_content').slideUp().prev('.box_title').removeClass('active');
         })
     }
 
@@ -198,7 +205,7 @@ $(function(){
 
     var eventsSwiper = new Swiper('#events_slider', {
         loop: false,
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         pagination: {
             el: '.events .swiper-pagination',
@@ -207,6 +214,11 @@ $(function(){
         navigation: {
             nextEl: '.events .swiper-button-next',
             prevEl: '.events .swiper-button-prev',
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+            }
         }
     });
 
@@ -247,11 +259,17 @@ $(function(){
             $body.removeClass('fix');
         }
     });*/
-
-    $('ul.tabnav').on('click', 'li:not(.active)', function(e) {  
-        e.preventDefault();
-        $(this).addClass('active').siblings().removeClass('active').closest('section').find('.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
-    });
+    if($('ul.tabnav').closest('.register').length > 0 && $(window).width() < 768) {
+        $('ul.tabnav').on('click', 'li:not(.active)', function(e) {  
+            e.preventDefault();
+            $(this).addClass('active').siblings().removeClass('active').closest('section').find('.box').eq($(this).index()).find('.box_title').trigger('click');
+        });
+    } else {
+        $('ul.tabnav').on('click', 'li:not(.active)', function(e) {  
+            e.preventDefault();
+            $(this).addClass('active').siblings().removeClass('active').closest('section').find('.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
+        });
+    }    
 
     $('.fancy_close').on('click', function(e){
         e.preventDefault();
