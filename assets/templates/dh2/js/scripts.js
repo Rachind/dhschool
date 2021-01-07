@@ -8,7 +8,9 @@ $(function(){
             var swiper = new Swiper(".instance-" + indx, {
                 pagination: {
                     el: '.instance-'+indx+' .swiper-pagination'
-                }
+                },
+                slidesPerView: 'auto',
+                spaceBetween: 30
             });
         });
 
@@ -267,9 +269,7 @@ $(function(){
             e.preventDefault();
             $(this).addClass('active').siblings().removeClass('active').closest('section').find('.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
         });
-    }
-
-    
+    }    
 
     $('.fancy_close').on('click', function(e){
         e.preventDefault();

@@ -1363,7 +1363,7 @@
 		margin-bottom: 18px;
 	}
 	.col_contacts h3 {
-		margin-bottom: 27px;
+		margin-bottom: 20px;
 	}
 	.social_footer {
 		margin-top: 17px;
@@ -1774,6 +1774,131 @@
 	}
 	.box_title.active:before {
 		display: none;
+	}
+	.register_result {
+		margin-top: 48px;
+	}
+	.how_it_was h2 {
+		margin-bottom: 24px;
+	}
+	.how_video_container {
+		width: auto;
+		height: 192px;
+	}
+	.how_video_container .caption,
+	.video_play:before {
+		height: 79px;
+	}
+	.how_video_container .caption .title{
+		margin-bottom: 0;
+	}
+	.play_btn {
+	    width: 30px;
+	    height: 30px;
+	    margin: -25px 0 0 -15px;
+	}
+	.how_it_was .container:after {
+		width: 96px;
+		height: 96px;
+		left: -18px;
+    	top: 219px;
+	}
+	.how_it_was .container:before {
+		top: 68px;
+	}
+	.our_directions {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.our_directions .col_item {
+		padding-left: 0;
+		padding-right: 0;
+		width: 259px;
+		height: 509px;
+		float: none;
+		flex: 0 0 auto;
+	}
+	.our_directions .col_item .row {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.our_directions .col_item .col_image {
+		order: 1;
+		height: 174px;
+	}
+	.our_directions .col_item .col_content {
+		order: 2;
+	}
+	.our_directions .col_image,
+	.our_directions .col_content {
+		flex: 0 0 auto;
+		max-width: 100%;
+		width: 100%;
+	}
+	.our_directions .col_content {
+		flex: 1 1 auto;
+	}
+	.our_directions .swiper-container {
+		overflow: visible;
+	}
+	.our_directions .title {
+		padding-left: 44px;
+	}
+	.our_directions .swiper-pagination {
+		display: none;
+	}
+	.advantages h2 {
+		font-size: 24px;
+	}
+	.advantages h2:before {
+		width: 112px;
+		height: 112px;
+		left: -52px;
+    	top: -28px;
+	}
+	.advantages h2 {
+	    margin-bottom: 28px;
+	}
+	.testim .container:after {
+		right: -80px;
+		top: -43px;
+		left: auto;
+	}
+	.testim.gray {
+		background: #fff;
+	}
+	.testim.gray .item {
+		background: #f2f5f9;
+	}
+	.testim.gray .swiper-slide-active .item:before {
+		color: #fff;
+	}
+	.events .title_row svg {
+		right: auto;
+		top: -29px;
+    	left: -30px;
+	}
+	.events .swiper-slide {
+		width: 224px;
+	}
+	.events .item .img {
+		height: 119px;
+	}
+	.events .item {
+		height: 353px;
+	}
+	.events .item .title {
+		margin-bottom: 13px;
+	}
+	.events .graph:nth-child(1) {
+	    top: 250px;
+	    left: 0px;
+	}
+	.events {
+		padding-bottom: 48px;
+	}
+	.ns_row {
+		margin-bottom: 0;
 	}
 }
 @media (max-height: 710px)  { 

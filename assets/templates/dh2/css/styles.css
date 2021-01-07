@@ -3714,6 +3714,9 @@ footer .contacts {
 }
 .events .item .img {
 	height: 202px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 .events .item .content {
 	padding: 18px 24px 26px;
