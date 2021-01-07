@@ -769,6 +769,54 @@
 	.our_directions .col_item:nth-child(even) {
 		float: right;
 	}
+	.diploms {
+		padding-top: 72px;
+		position: relative;
+	}
+	.diploms:before {
+		content: '';
+		position: absolute;
+		background: #8fc742;
+		width: 128px;
+		height: 128px;
+		border-radius: 50%;
+		top: -64px;
+		right: -64px;
+	}
+	.diploms .container:after {
+		border-right-width: 56px;
+		border-left-width: 56px;
+		border-top-width: 56px;
+		border-bottom-width: 56px;
+	}
+	.testim .container:after {
+		left: -56px;
+		top: 400px;
+	}
+	.events {
+		padding-top: 72px;
+		padding-bottom: 76px;
+	}
+	.events .title_row {
+		margin-bottom: 48px;
+	}
+	.events .title_row svg {
+		left: auto;
+		right: 0;
+		top: -100px;
+	}
+	.events .swiper-slide {
+		width: 277px;
+	}
+	.events .swiper-container {
+		overflow: visible;
+	}
+	.main_bnr_dod .title_section {
+		margin-top: 35px;
+	}
+	.main_bnr_dod .graphs {
+		margin-top: 22px;
+	}
 }
 /* планшет 768 */
 @media screen and (max-width: 991px) {

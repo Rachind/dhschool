@@ -198,7 +198,7 @@ $(function(){
 
     var eventsSwiper = new Swiper('#events_slider', {
         loop: false,
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         pagination: {
             el: '.events .swiper-pagination',
@@ -207,6 +207,11 @@ $(function(){
         navigation: {
             nextEl: '.events .swiper-button-next',
             prevEl: '.events .swiper-button-prev',
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+            }
         }
     });
 

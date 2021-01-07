@@ -3220,6 +3220,7 @@ footer .contacts {
 	left: 0;
 	top: 0;
 	position: absolute;
+	background-size: cover;
 }
 .main_bnr_dod .breadcrumbs {
 	margin-bottom: 33px;
@@ -3709,6 +3710,9 @@ footer .contacts {
 	border: 1px solid #E8E8E8;
 	position: relative;
 	height: 427px;
+}
+.events .item .img {
+	height: 202px;
 }
 .events .item .content {
 	padding: 18px 24px 26px;
