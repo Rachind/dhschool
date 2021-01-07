@@ -3359,7 +3359,8 @@ footer .contacts {
 	background: #FF692E;
 }
 .boxes .col_content,
-.boxes .col_count {
+.boxes .col_count,
+.boxes .col_label {
 	padding: 0 32px;
 }
 .boxes .col_content {

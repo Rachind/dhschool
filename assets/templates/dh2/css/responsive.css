@@ -1665,6 +1665,116 @@
 	.card-header .title_row {
 		margin-bottom: 0;
 	}
+	.main_bnr_dod {
+		position: relative;
+		height: 370px;
+	}
+	.main_bnr_dod h1 {
+		font-size: 24px;
+	}
+	.main_bnr_dod .title_section {
+		color: #233874;
+	}
+	.main_bnr_dod .item:nth-child(3),
+	.main_bnr_dod .item:nth-child(7),
+	.main_bnr_dod .item:nth-child(8) {
+		display: none;
+	}
+	.main_bnr_dod .graphs {
+		position: absolute;
+		top: 0;
+		right: -0.5em;
+	}
+	.main_bnr_dod .col_right {
+		position: static;
+	}
+	.main_bnr_dod .item:nth-child(1) {
+		top: 2em;
+		transform: rotate(90deg);
+	}
+	.intro_text {
+		padding-top: 24px;
+	}
+	.register h2 {
+		font-size: 24px;
+	}
+	.register .title_row svg {
+		width: 112px;
+		height: 112px;
+	}
+	.register .title_row svg {
+		left: -55px;
+	}
+	.register .subtitle {
+		font-size: 18px;
+	}
+	.register .title_row {
+		margin-bottom: 40px;
+	}
+	.register .tabnav li {
+		padding: 0;
+		border: none;
+		font-size: 16px;
+		border-bottom: 1px solid #233874;
+		color: #233874;
+		margin-right: 25px;
+	}
+	.register .tabnav li.active {
+		color: #0601EC;
+		border-bottom-color: #0601EC;
+	}
+	.boxes_cont.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.boxes .col_content {
+		flex: 1 1 100%;
+		min-width: 100%;
+	}
+	.boxes .box_content .col_content {
+		margin-bottom: 24px;
+	}
+	.boxes .content_row {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.boxes .col_label {
+		font-weight: bold;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #233874;
+	}
+	.count_b {
+		padding-top: 0;
+	}
+	.register .box .box_content {
+		display: none;
+	}
+	.register .box,
+	.register .box:first-child .box_content {
+		display: block;
+	}
+	.box_title {
+		position: relative;
+	}
+	.box_title:after,
+	.box_title:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 32px;
+		width: 16px;
+		height: 3px;
+		background: #fff;
+		margin-top: -2px;
+	}
+	.box_title:before {
+		transform: rotate(90deg);
+	}
+	.box_title.active:before {
+		display: none;
+	}
 }
 @media (max-height: 710px)  { 
 	
