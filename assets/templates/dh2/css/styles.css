@@ -3736,3 +3736,16 @@ footer .contacts {
 .events .item:hover .link_more .cls-1 {
 	fill: #233874;
 }
+.testdrive_fs .button_group {
+	max-width: 464px;
+}
+.testdrive_fs .title_section {
+	margin-bottom: 93px;
+}
+.testdrive_fs .price_section .old_price {
+	font-weight: bold;
+	font-size: 18px;
+}
+.testdrive_fs .price_section .current_price {
+	font-size: 42px;
+}
