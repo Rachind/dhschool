@@ -4113,3 +4113,77 @@ h4 {
 .teacher .col_content .text p:not(:last-child) {
 	margin-bottom: 1.4em;
 }
+.bonus {
+	padding-top: 96px;
+	padding-bottom: 96px;
+	background: #f2f5f9;
+}
+.bonus .title_row {
+	position: relative;
+}
+.bonus .title_row:before {
+	content: '';
+	width: 112px;
+	height: 112px;
+	background: #8fc742;
+	border-radius: 50%;
+	position: absolute;
+	left: -56px;
+	top: -5px;
+}
+.bonus h2 {
+	font-size: 80px;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 48px;
+}
+.bonus .col_text {
+	padding-right: 80px;
+}
+.bonus .col_item:not(:last-child) {
+	margin-bottom: 48px;
+}
+.bonus .col_item .title {
+	margin-bottom: 16px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #233874;
+}
+.bonus .col_item .desc {
+	font-size: 20px;
+	color: #72787e;
+	line-height: 1.3em;
+	font-family: Roboto, sans-serif;
+}
+.bonus .col_image .img {
+	width: 483px;
+	height: 483px;
+	position: relative;
+}
+.bonus .col_image .img img {
+	border-radius: 50%;
+	width: 100%;
+	position: relative;
+	z-index: 3;
+}
+.bonus .col_image .img:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+	height: 50%;
+	background: #ff692e;
+	z-index: 1;
+}
+.graph-1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 5;
+}
+.graph-2 {
+	position: absolute;
+	bottom: 0;
+	right: -140px;
+}
