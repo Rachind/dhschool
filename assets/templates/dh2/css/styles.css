@@ -3775,3 +3775,51 @@ h4 {
 	left: -60px;
 	top: 220px;
 }
+.for_you {
+	background: #f2f5f9;
+	padding-top: 72px;
+	padding-bottom: 58px;
+}
+.for_you h2 {
+	margin-bottom: 0;
+	position: relative;
+}
+.for_you .title_row {
+	position: relative;
+	margin-bottom: 48px;
+}
+.for_you .title_row:before {
+	content: '';
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	background: #2df;
+	top: -23px;
+	left: -43px;
+}
+.image_items .item {
+	height: 279px;
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 30px;
+}
+.text_items .item {
+	height: 279px;
+	background: #fff;
+	box-shadow: 0 4px 20px rgba(24,66,121,.03);
+	padding: 24px 30px;
+	margin-bottom: 30px;
+	border: 1px solid #E8E8E8;
+}
+.text_items .item .title {
+	font-weight: 600;
+	font-size: 18px;
+	color: #233874;
+	margin-bottom: 16px;
+}
+.text_items .item .desc {
+	font-family: Roboto, sans-serif;
+	color: #72787e;
+	line-height: 1.4t;
+}
