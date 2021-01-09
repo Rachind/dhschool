@@ -3823,3 +3823,42 @@ h4 {
 	color: #72787e;
 	line-height: 1.4t;
 }
+.will_free {
+	text-align: center;
+}
+.will_free .form_wrapper {
+	float: none;
+	padding-right: 0;
+}
+.will_free .form_wrapper:after {
+	display: none;
+}
+.will_free .container {
+	position: relative;
+	padding-top: 72px;
+}
+.will_free .graph-1,
+.will_free .graph-2 {
+	position: absolute;
+	top: 0;
+	right: -50px;
+}
+.will_free .graph-1 {
+	top: -56px;
+}
+.consult.will_free {
+	padding-top: 0;
+}
+.will_free .title {
+	margin-bottom: 34px;
+}
+.will_free .subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.3em;
+	max-width: 995px;
+	margin: 0 auto 21px;
+}
+.will_free .consult_form {
+	margin: 0 auto;
+}
