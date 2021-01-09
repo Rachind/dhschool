@@ -1666,6 +1666,7 @@ h3 {
 	font-size: 16px;
 	line-height: 1.4em;
 	color: #72787E;
+	text-decoration: none;
 }
 .read_more a:hover,
 .all_items a:hover {
@@ -4186,4 +4187,64 @@ h4 {
 	position: absolute;
 	bottom: 0;
 	right: -140px;
+}
+.testim .item_video {
+	position: relative;
+}
+.item_video .caption {
+	position: absolute;
+	color: #fff;
+	bottom: 14px;
+	z-index: 5;
+	left: 23px;
+}
+.item_video .caption .name {
+	text-align: right;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.4em;
+	border-right: 1px solid #fff;
+}
+.item_video .caption .course_title {
+	font-size: 14px;
+	line-height: 1.4em;
+	text-align: left;
+}
+.item_video img {
+	vertical-align: bottom;
+	width: 100%;
+}
+.item_video img.ava {
+	width: 165px;
+	height: 165px;
+	position: absolute;
+	top: -135px;
+	left: 50%;
+	margin-left: -82px;
+	border-radius: 50%;
+	display: none;
+}
+.item_video:after {
+	content: '';
+	z-index: 4;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 109px;
+	background: -moz-linear-gradient(top,  rgba(35,56,116,0) 0%, rgba(19,31,63,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(35,56,116,0) 0%,rgba(19,31,63,1) 100%);
+	background: linear-gradient(to bottom,  rgba(35,56,116,0) 0%,rgba(19,31,63,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131F3F', endColorstr='#131F3F',GradientType=0 );
+}
+.testim .swiper-slide:not(.swiper-slide-active) .item_video {
+    width: 380px;
+    height: 222px;
+    margin: 0 auto;
+}
+.testim .swiper-slide:not(.swiper-slide-active) .item_video .caption {
+	display: none;
+}
+.testim .swiper-slide:not(.swiper-slide-active) .item_video img.ava {
+	display: block;
 }
