@@ -3910,3 +3910,51 @@ h4 {
 	margin-bottom: 16px;
 	height: 99px;
 }
+.yell_sale {
+	background: #ffcc21;
+}
+.yell_sale .d,
+.yell_sale .t {
+	text-align: center;
+}
+.yell_sale .d {
+	color: #233874;
+	font-weight: bold;
+	font-size: 80px;
+	line-height: 1.219em;
+}
+.yell_sale .t {
+	color: #233874;
+	font-weight: bold;
+	font-size: 24px;
+}
+.yell_sale .row_price {
+	margin-top: 23px;
+}
+.yell_sale .price {
+	font-size: 42px;
+	line-height: 55px;
+	font-weight: bold;
+	text-align: center;
+}
+.yell_sale .old_price {
+	text-align: center;
+	color: #72787e;
+	font-weight: bold;
+	font-size: 18px;
+}
+.yell_sale .container {
+	position: relative;
+	padding-top: 33px;
+	padding-bottom: 33px;
+}
+.yell_sale .graph-1 {
+	position: absolute;
+	top: 0;
+	left: 15px;
+}
+.yell_sale .graph-2 {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+}
