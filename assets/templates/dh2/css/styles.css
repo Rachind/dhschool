@@ -3749,3 +3749,15 @@ footer .contacts {
 .testdrive_fs .price_section .current_price {
 	font-size: 42px;
 }
+h4 {
+	color: #233874;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.4em;
+	margin-bottom: 2.8em;
+}
+.testdrive_ac .video_link_wrap .graph-1 {
+	bottom: auto;
+	top: 130px;
+}
