@@ -123,6 +123,18 @@ $(function(){
         },
     });
 
+    var testdriveAboutSlider = new Swiper('#testdriveAboutSlider', {
+        loop: true,
+        pagination: {
+            el: '.testdrive_ac .swiper-pagination',
+            type: 'fraction'
+        },
+        navigation: {
+            nextEl: '.testdrive_ac .swiper-button-next',
+            prevEl: '.testdrive_ac .swiper-button-prev',
+        }
+    });
+
     var students_worksSwiper = new Swiper('.students_works .swiper-container', {
         loop: false,
         pagination: {

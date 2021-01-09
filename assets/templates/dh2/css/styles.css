@@ -1680,7 +1680,9 @@ h3 {
 .teachers .swiper-button-next,
 .teachers .swiper-button-prev,
 .events .swiper-button-next,
-.events .swiper-button-prev {
+.events .swiper-button-prev ,
+.testdrive_ac .swiper-button-next,
+.testdrive_ac .swiper-button-prev {
 	position: static;
 	background: none;
 	width: 26px;
@@ -1698,7 +1700,9 @@ h3 {
 .teachers .swiper-button-next svg,
 .teachers .swiper-button-prev svg,
 .events .swiper-button-next svg,
-.events .swiper-button-prev svg {
+.events .swiper-button-prev svg,
+.testdrive_ac .swiper-button-next svg,
+.testdrive_ac .swiper-button-prev svg {
 	width: 100%;
 	height: 100%;
 }
@@ -1713,7 +1717,9 @@ h3 {
 .teachers .swiper-button-next:after,
 .teachers .swiper-button-prev:after,
 .events .swiper-button-next:after,
-.events .swiper-button-prev:after {
+.events .swiper-button-prev:after,
+.testdrive_ac .swiper-button-next:after,
+.testdrive_ac .swiper-button-prev:after {
 	display: none;
 }
 .students .swiper-button-prev,
@@ -1721,7 +1727,8 @@ h3 {
 .students_works .swiper-button-prev,
 .testim .swiper-button-prev,
 .teachers .swiper-button-prev,
-.events .swiper-button-prev {
+.events .swiper-button-prev,
+.testdrive_ac .swiper-button-prev {
 	transform: rotate(180deg);
 }
 .students .swiper-pagination,
@@ -1729,7 +1736,8 @@ h3 {
 .students_works .swiper-pagination,
 .testim .swiper-pagination,
 .teachers .swiper-pagination,
-.events .swiper-pagination {
+.events .swiper-pagination ,
+.testdrive_ac .swiper-pagination {
 	position: static;
 	margin: 0 16px;
 }
@@ -1753,7 +1761,8 @@ h3 {
 .students_works .fraction,
 .testim .fraction,
 .teachers .fraction ,
-.events .fraction {
+.events .fraction,
+.testdrive_ac .fraction {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 1.4em;
@@ -2086,7 +2095,8 @@ h3 {
 	background: url(../i/brand-inter.svg) left center no-repeat;
 }
 .students_works .swiper-nav,
-.events .swiper-nav{
+.events .swiper-nav,
+.testdrive_ac .swiper-nav{
 	margin-top: 50px;
 }
 .advantages.start h2:before {
@@ -3757,7 +3767,11 @@ h4 {
 	line-height: 1.4em;
 	margin-bottom: 2.8em;
 }
-.testdrive_ac .video_link_wrap .graph-1 {
-	bottom: auto;
-	top: 130px;
+.testdrive_ac .container {
+	position: relative;
+}
+.testdrive_ac .graph-1 {
+	position: absolute;
+	left: -60px;
+	top: 220px;
 }
