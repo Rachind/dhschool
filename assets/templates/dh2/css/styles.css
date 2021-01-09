@@ -1497,7 +1497,8 @@ h2 {
 	background-size: cover;
 	height: 544px;
 }
-.advantages .tabnav {
+.advantages .tabnav,
+.adv_tabs {
 	list-style-type: none;
 	font-weight: bold;
 	font-size: 18px;
@@ -1506,10 +1507,13 @@ h2 {
 	color: #A0A4A8;
 }
 .advantages .tabnav li.active,
-.advantages .tabnav li:hover {
+.advantages .tabnav li:hover,
+.adv_tabs li.active,
+.adv_tabs li:hover {
 	color: #233874;
 }
-.advantages .tabnav li {
+.advantages .tabnav li,
+.adv_tabs li {
 	margin-bottom: 18px;
 	cursor: pointer;
 }
@@ -3957,4 +3961,33 @@ h4 {
 	position: absolute;
 	bottom: 0;
 	right: 15px;
+}
+.results_study {
+	padding-top: 128px;
+}
+.results_study h2,
+.results_study .title_row {
+	position: relative;
+}
+.results_study .title_row svg {
+	position: absolute;
+	left: -55px;
+	top: -32px;
+}
+.results_study h2 {
+	font-size: 80px;
+	text-transform: uppercase;
+}
+.results_study .col_images {
+	flex: 0 0 687px;
+}
+.results_study .col_desc {
+	padding-top: 42px;
+	font-size: 20px;
+	line-height: 1.3em;
+	color: #233874;
+	font-family: Roboto, sans-serif;
+}
+.results_study .col_menu {
+	padding-top: 78px;
 }
