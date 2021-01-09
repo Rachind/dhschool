@@ -3862,3 +3862,51 @@ h4 {
 .will_free .consult_form {
 	margin: 0 auto;
 }
+.program_course {
+	padding-top: 72px;
+	padding-bottom: 66px;
+	background: #f2f5f9;
+}
+.program_course h2 {
+	margin-bottom: 48px;
+	position: relative;
+}
+.program_course .title_row {
+	position: relative;
+}
+.program_course .title_row svg {
+	position: absolute;
+	left: -93px;
+	top: -50px;
+}
+.program_course .item {
+	background: #fff;
+	margin-bottom: 30px;
+}
+.program_course .item .img img {
+	width: 100%;
+	vertical-align: bottom;
+}
+.program_course .item .content {
+	padding: 18px 32px 0 36px;
+	height: 417px;
+}
+.program_course .item ul {
+	list-style-type: disc;
+	color: #72787e;
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+}
+.program_course .item .undertitle,
+.program_course .item .title {
+	color: #233874;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.4em;
+}
+.program_course .item .title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	height: 99px;
+}
