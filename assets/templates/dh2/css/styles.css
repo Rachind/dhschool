@@ -865,9 +865,6 @@ body {
 .mob_slider  {
 	z-index: 5;
 }
-#container {
-	overflow: hidden;
-}
 header {
 	position: fixed;
 	background: #F9F9FA;
@@ -2127,6 +2124,7 @@ h3 {
 	padding-top: 96px;
 	padding-bottom: 72px;
 	text-align: center;
+	overflow: hidden;
 }
 .testim h2 {
 	margin-bottom: 50px;
@@ -2291,6 +2289,7 @@ h3 {
 }
 footer .contacts {
 	background: #233874;
+	overflow: hidden;
 }
 .col_contacts .phone {
 	transform: translateY(-3px);
@@ -2580,6 +2579,7 @@ footer .contacts {
 .course_first_scr {
 	height: 608px;
 	background: #F9F9FA;
+	overflow: hidden;
 }
 .course_first_scr .container,
 .course_first_scr .row {
@@ -3789,6 +3789,7 @@ h4 {
 	background: #f2f5f9;
 	padding-top: 72px;
 	padding-bottom: 58px;
+	overflow: hidden;
 }
 .for_you h2 {
 	margin-bottom: 0;
@@ -3879,6 +3880,7 @@ h4 {
 	padding-top: 72px;
 	padding-bottom: 66px;
 	background: #f2f5f9;
+	overflow: hidden;
 }
 .program_course h2 {
 	margin-bottom: 48px;
@@ -3925,6 +3927,7 @@ h4 {
 }
 .yell_sale {
 	background: #ffcc21;
+	overflow: hidden;
 }
 .yell_sale .d,
 .yell_sale .t {
@@ -3973,6 +3976,7 @@ h4 {
 }
 .results_study {
 	padding-top: 128px;
+	padding-bottom: 96px;
 }
 .results_study h2,
 .results_study .title_row {
@@ -3990,6 +3994,11 @@ h4 {
 .results_study .col_images {
 	flex: 0 0 687px;
 }
+.results_study .col_images .img {
+	height: 358px;
+	background-size: cover;
+	background-position: center center;
+}
 .results_study .col_desc {
 	padding-top: 42px;
 	font-size: 20px;
@@ -4004,6 +4013,7 @@ h4 {
 	background: #f2f5f9;
 	padding-top: 72px;
 	padding-bottom: 66px;
+	overflow: hidden;
 }
 .easy h2 {
 	margin-bottom: 48px;

@@ -925,6 +925,103 @@
 	.program_course .card-header .collapsed {
 		color: #233874;
 	}
+	.yell_sale .graph-1 {
+		left: -45px;
+	}
+	.yell_sale .graph-2 {
+		right: -45px;
+	}
+	.results_study h2 {
+		font-size: 42px;
+		width: 50%;
+	}
+	.results_study .col_menu {
+		padding-top: 0;
+	}
+	.results_study .col_menu {
+		padding-left: 15px;
+		padding-right: 15px;
+		flex: 0 0 370px;
+	}
+	.results_study .col_images {
+		flex: 1 1 auto;
+	}
+	.results_study .row {
+		flex-wrap: nowrap;
+	}
+	.results_study .col_images .img {
+		height: 264px;
+	}
+	.results_study .box .row {
+		flex-wrap: wrap;
+	}
+	.results_study .col_menu {
+		position: absolute;
+		left: -15px;
+		top: 0;
+		z-index: 10;
+	}
+	.results_study_body {
+		position: relative;
+	}
+	.easy .image_items {
+		height: 363px;
+		margin-bottom: 68px;
+	}
+	.easy .image_items .item:nth-child(2) {
+		bottom: auto;
+		top: 0;
+		left: 0;
+		width: 392px;
+		height: 200px;
+	}
+	.easy .image_items .item:nth-child(1) { 
+		bottom: auto;
+		top: 230px;
+		left: 181px;
+		width: 211px;
+		height: 133px;
+	}
+	.easy .image_items .item:nth-child(3) {
+		left: auto;
+		right: 0;
+		top: 77px;
+		width: 287px;
+		height: 216px;
+	}
+	.easy .image_items .graph-1 {
+		width: 112px;
+		height: 112px;
+		top: 158px;
+		left: 339px;
+	}
+	.easy .swiper-container {
+		overflow: visible;
+	}
+	.easy .swiper-slide {
+		width: 286px;
+		height: 243px;
+	}
+	.easy .swiper-pagination {
+		display: none;
+	}
+	.teacher .col_image {
+		position: relative;
+	}
+	.teacher .col_image .img {
+		position: -webkit-sticky;
+    	position: sticky;
+    	top: 175px;
+    	left: 0;
+    	bottom: 0;
+	}
+	.is_sticky_cont{
+		height: 100%;
+		position: relative;
+	}
+	.more_element {
+		height: 500px;
+	}
 }
 /* планшет 768 */
 @media screen and (max-width: 991px) {
