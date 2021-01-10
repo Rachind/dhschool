@@ -817,6 +817,114 @@
 	.main_bnr_dod .graphs {
 		margin-top: 22px;
 	}
+	.testdrive_fs .title_section .title {
+		font-size: 42px;
+	}
+	.testdrive_fs .title_section {
+		margin-bottom: 23px;
+	}
+	.testdrive_fs .price_section .current_price {
+		font-size: 24px;
+	}
+	.gr_line {
+		text-transform: none;
+	}
+	.about_course {
+		padding-top: 48px;
+		padding-bottom: 72px;
+	}
+	.about_course h2 {
+		margin-bottom: 24px;
+	}
+	.about_course h4 {
+		margin-bottom: 42px;
+	}
+	.testdrive_ac .about_content {
+		padding-left: 0;
+	}
+	.testdrive_ac .graph-1 {
+		top: 114px;
+	}
+	.testdrive_ac .swiper-nav {
+		margin-top: 24px;
+	}
+	.image_items .item {
+		height: 161px;
+	}
+	.for_you .swiper-slide {
+		width: 286px;
+	}
+	.for_you .swiper-container {
+		overflow: visible;
+	}
+	.for_you .swiper-pagination {
+		display: none;
+	}
+	.will_free .graph-1,
+	.will_free .graph-2 {
+		width: 120px;
+		height: 120px;
+		right: 15px;
+	}
+	.will_free .graph-2 {
+		height: 78px;
+	}
+	.will_free .graph-1 rect,
+	.will_free .graph-2 rect {
+		stroke-width: 45px;
+	}
+	.will_free .title {
+		padding: 0 150px;
+	}
+	.program_course h2 {
+		font-size: 42px;
+	}
+	.program_course .title_row svg {
+	    left: -87px;
+	    top: -25px;
+	}
+	.program_course .card-header {
+		text-transform: none;
+		font-size: 24px;
+		font-weight: bold;
+		padding: 0;
+	}
+	.program_course .acc_title {
+		padding: 10px 29px;
+		margin-left: -29px;
+		margin-right: -29px;
+	}
+
+	.program_course .card-header .subtitle {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 1.2em;
+	} 
+	.program_course .acc_title[aria-expanded="true"],
+	.program_course .card-body, 
+	.acc_box {
+		background: #fff;
+	}
+	.program_course .card-header .acc_title:before,
+	.program_course .card-header .acc_title:after {
+		margin-right: 29px;
+	}
+	.program_course .card-body {
+		padding-top: 0;
+		color: #72787e;
+	}
+	.acc_box {
+		margin-left: -29px;
+		margin-right: -29px;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+	.program_course .card-body.text ul {
+		padding-left: 1.2em;
+	}
+	.program_course .card-header .collapsed {
+		color: #233874;
+	}
 }
 /* планшет 768 */
 @media screen and (max-width: 991px) {
