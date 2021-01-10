@@ -20,6 +20,10 @@ $(function(){
         })
     }
 
+    if($(window).width() < 992) {
+        toSwiper('.to_swiper_tablet');
+    }
+
     $('.touchevents .city_select span').on('click', function(e){
         e.preventDefault();
         $(this).parent().find('.city_options').show();
@@ -121,6 +125,18 @@ $(function(){
         fadeEffect: {
             crossFade: true
         },
+    });
+
+    var testdriveAboutSlider = new Swiper('#testdriveAboutSlider', {
+        loop: true,
+        pagination: {
+            el: '.testdrive_ac .swiper-pagination',
+            type: 'fraction'
+        },
+        navigation: {
+            nextEl: '.testdrive_ac .swiper-button-next',
+            prevEl: '.testdrive_ac .swiper-button-prev',
+        }
     });
 
     var students_worksSwiper = new Swiper('.students_works .swiper-container', {
@@ -297,3 +313,18 @@ $(function(){
     })
 })
 
+function toSwiper(selector) {
+    $(selector).each(function(indx, elem){
+        $(elem).addClass('swiper-wrapper').removeClass('row').wrap('<div class="swiper-container"></div>').children().addClass('swiper-slide').removeClass('col-md-6');
+
+        $(elem).parent().addClass("instance-" + indx).append('<div class="swiper-pagination"></div>');;
+       
+        var swiper = new Swiper(".instance-" + indx, {
+            pagination: {
+                el: '.instance-'+indx+' .swiper-pagination'
+            },
+            slidesPerView: 'auto',
+            spaceBetween: 30
+        });
+    });
+}
