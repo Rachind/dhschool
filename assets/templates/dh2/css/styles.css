@@ -3012,7 +3012,7 @@ footer .contacts {
 	padding-top: 73px;
 	padding-bottom: 95px;
 }
-.title_row {
+.course_program .title_row {
 	margin-bottom: 48px;
 }
 .course_program .text {
@@ -4129,6 +4129,14 @@ h4 {
 	font-family: Roboto, sans-serif;
 	line-height: 1.4em;
 }
+.teacher .col_content .text.desc {
+	display: none;
+}
+.teacher .col_content .text .read_more {
+	color: #72787e;
+	text-decoration: underline;
+	font-size: 16px;
+}
 .teacher .col_content .text p:not(:last-child) {
 	margin-bottom: 1.4em;
 }
@@ -4242,7 +4250,10 @@ h4 {
 	border-radius: 50%;
 	display: none;
 }
-.item_video:after {
+.item_video .img {
+	position: relative;
+}
+.item_video .img:after {
 	content: '';
 	z-index: 4;
 	position: absolute;

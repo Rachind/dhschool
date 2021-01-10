@@ -1065,7 +1065,7 @@
 	}
 	.bonus .col_item:not(:first-child) {
 		max-width: 50%;
-		flex: 0 0 59%;
+		flex: 0 0 50%;
 	}
 	.testim.testdrive_testim h3 {
 		margin-bottom: 24px;
@@ -1727,7 +1727,7 @@
 	.title_section {
 		margin-top: 61px;
 	}
-	.button_group .btn_stroke {
+	.course_first_scr:not(.testdrive_fs) .button_group .btn_stroke {
 		border: none;
 		padding: 0;
 		color: #fff;
@@ -2196,6 +2196,188 @@
 	.ns_row {
 		margin-bottom: 0;
 	}
+	.teacher_row {
+		flex-wrap: wrap;
+	}
+	.teacher .col_image {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    margin-bottom: 24px;
+	}
+	.teacher .col_image .img {
+		height: 236px;
+		position: static;
+	}
+	.teacher {
+	    padding-top: 48px;
+	    padding-bottom: 48px;
+	}
+	.teacher .col_content .text {
+		margin-bottom: 40px;
+	}
+	.teacher .title_row {
+		margin-bottom: 24px;
+	}
+	.teacher .col_content .text.desc {
+		display: block;
+	}
+	.teacher .col_content .text.desc_full {
+		display: none;
+	}
+	.teacher .all_items {
+		text-align: center;
+	}
+	.bonus {
+		padding-bottom: 24px;
+	}
+	.bonus .col_image .img {
+		width: 221px;
+		height: 221px;
+	}
+	.bonus .graph-1, 
+	.bonus .graph-2 {
+		width: 73px;
+		height: 73px;
+	}
+	.bonus .graph-2 {
+		right: -29px;
+	}
+	.bonus .col_image .img {
+		left: -15px;
+	}
+	.bonus .col_image {
+		margin-bottom: 40px;
+	}
+	.bonus .col_item:not(:first-child) {
+	    max-width: 100%;
+	    flex: 0 0 100%;
+	}
+	.bonus .col_item:not(:last-child){
+		margin-bottom: 24px;
+	}
+	.bonus .col_item .title {
+		font-size: 18px;
+	}
+	.bonus .col_item .desc {
+		font-size: 16px;
+	}
+	.testim h3 {
+		font-size: 24px;
+	}
+	.testim {
+		padding-top: 48px;
+		padding-bottom: 72px;
+	}
+	.testim.testdrive_testim .swiper-container {
+		padding-top: 24px;
+	}
+	.item_video .caption {
+		position: static;
+		color: #233874;
+		margin-top: 19px;
+	}
+	.item_video .caption .name {
+		border-right: 0;
+		text-align: left;
+	}
+	.item_video .caption .row {
+		display: block;
+		margin: 0;
+	}
+	.item_video .caption .name,
+	.item_video .caption .course_title {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.continue_training .title_row h2 {
+		font-size: 24px;
+		width: 50%;
+		margin-bottom: 32px;
+	}
+	.continue_training .title_row:before {
+		top: -27px;
+	}
+	.continue_training > .container > .row {
+		flex-wrap: wrap;
+	}
+	.continue_training .col_image {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.continue_training .col_item:nth-child(1),
+	.continue_training .col_item:nth-child(4) {
+		-ms-flex: 0 0 66.666667%;
+	    flex: 0 0 66.666667%;
+	    max-width: 66.666667%;
+	}
+	.continue_training .col_item:nth-child(2),
+	.continue_training .col_item:nth-child(3) {
+		-ms-flex: 0 0 33.333333%;
+	    flex: 0 0 33.333333%;
+	    max-width: 33.333333%;
+	}
+	.continue_training .col_item {
+		height: 105px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 20px;
+	}
+	.continue_training .col_image .row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.continue_training p {
+		font-size: 16px;
+		margin-bottom: 1em;
+	}
+	.continue_training .btn_group {
+		text-align: center;
+	}
+	.sign-up-course .consult_form input.field_name,
+	.will_free .consult_form input.field_name  {
+		flex: 0 0 112px;
+		max-width: 112px;
+		padding-left: 17px;
+	}
+	.sign-up-course .consult_form,
+	.will_free .consult_form {
+		width: 100%;
+	}
+	.sign-up-course .consult_form input.field_phone,
+	.will_free .consult_form input.field_phone {
+		width: 128px;
+	}
+	.sign-up-course .form_wrapper,
+	.will_free .form_wrapper {
+		height: auto;
+	}
+	.consult.will_free .title {
+		font-size: 42px;
+		padding: 0;
+	}
+	.will_free .graph-1, 
+	.will_free .graph-2 {
+		right: -90px;
+		display: none;
+	}
+	.will_free .subtitle {
+		font-size: 18px;
+		font-weight: 600;
+	}
+	.will_free .container {
+		padding-top: 48px;
+	}
+	.will_free,
+	.students_works,
+	.course_works,
+	.teachers {
+		overflow: hidden;
+	}
+	.course_first_scr.testdrive_fs .button_group .btn_stroke {
+		color: #fff;
+		border-color: #fff;
+	}
+
 }
 @media (max-height: 710px)  { 
 	
