@@ -1,4 +1,9 @@
 $(function(){
+    // disable links on page DOD
+    $('.tpl_33 .menu_level_1 a, .tpl_33 .menu_level_2 a, .tpl_33 .our_directions a, .tpl_33 .f_menu a').on('click', function(e){
+        e.preventDefault();
+    })
+
     if($(window).width() < 768) {
         $('.to_swiper').each(function(indx, elem){
             $(elem).addClass('swiper-wrapper').removeClass('row').wrap('<div class="swiper-container"></div>').children().addClass('swiper-slide').removeClass('row');
@@ -21,7 +26,9 @@ $(function(){
     }
 
     if($(window).width() < 992) {
-        toSwiper('.to_swiper_tablet');
+        $('.to_swiper_tablet').each(function(){
+            toSwiper(this);    
+        })
     }
 
     $('.touchevents .city_select span').on('click', function(e){
@@ -172,6 +179,8 @@ $(function(){
     var testimSwiper = new Swiper('.testim .swiper-container', {
         effect: 'coverflow',
         grabCursor: true,
+        simulateTouch: true,
+        preventClicks: false,
         centeredSlides: true,
         slidesPerView: 1,
         initialSlide: 1,
@@ -181,8 +190,7 @@ $(function(){
             depth: 50,
             modifier: 1,
             slideShadows: false,
-        },
-        
+        },        
         pagination: {
             el: '.testim .swiper-pagination',
             type: 'fraction'
@@ -266,15 +274,25 @@ $(function(){
 
     // $('input[name=phone]').mask('+7 999 999-99-99');
 
-    /*$(window).on('scroll load', function(){
-        var $body = $('body');
-        var top = $(document).scrollTop();
-        if (top > 0) {
-            $body.addClass('fix');
+    $(".scroll_to").on('click', function(e) {
+        e.preventDefault();
+        //calculate destination place
+        var dest = 0;
+        if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+            dest = $(document).height() - $(window).height();
         } else {
-            $body.removeClass('fix');
+            dest = $(this.hash).offset().top;
         }
-    });*/
+        //go to destination
+        $('html,body').animate({
+            scrollTop: dest - 116
+        }, 1000, 'swing');
+    });
+
+    $('.register .scroll_to').on('click', function(){
+        $(this).parent().addClass('active').siblings().removeClass('active');
+    })
+
     if($('ul.tabnav').closest('.register').length > 0 && $(window).width() < 768) {
         $('ul.tabnav').on('click', 'li:not(.active)', function(e) {  
             e.preventDefault();
@@ -305,17 +323,94 @@ $(function(){
         }
 
         inp.trigger('change');
+        recalc();
     });
+
+    $('[data-form-subject]').on('click', function(){
+        var subject = $(this).data('form-subject');
+        $('#subjectField').val(subject);
+    })
 
     $('.read_more').on('click', function(e){
         e.preventDefault();
         $(this).parent('.desc').hide().next('.desc_full').show();
+    });
+
+    $(document).on('change','.popup-control',function(){
+        if($(this).val()){
+            $(this).addClass('has_value');
+        }else{
+            $(this).removeClass('has_value');
+        }
+    });
+
+    $('#filterDirection a').on('click', function(e){
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+        var filter = $(this).data('filter');
+
+        var data_filter = {
+            action: 'getDirFilter',
+            filter: $(this).data('filter'),
+            parent: $(this).data('parent')
+        };
+        // console.log(data_filter)
+        $.ajax({
+            type: "POST",
+            url: "/ajax.html",
+            data: data_filter,
+            success: function(result){
+                $('#filterDirectionResult').html(result);
+            }
+        });
     })
+
+    $('.dir_slide_flink').on('click', function(indx, elem){
+        $(this).addClass('active').siblings().removeClass('active');
+        var parent = $(this).data('dir-id');
+        $.ajax({
+            type: "POST",
+            url: "/ajax.html",
+            data: {
+                'action': 'getDirSliderFilter',
+                'parent': parent
+            },
+            success: function(result){
+                $('#programs_slider .swiper-wrapper').html(result);
+                programsSwiper.update();
+            }
+        });
+    })
+
+    $('#directionsFilterForm').on('change', function(){        
+        var formData = new FormData($(this)[0]);
+        $.ajax({
+            type: "POST",
+            url: "/ajax.html",
+            processData: false,
+            contentType: false,
+            data: formData,
+            success: function(result){
+                //console.log(result)
+                $('#resultPrograms').html(result);
+                $('.programs_result .pagination').remove();
+            }
+        });
+    })
+
+
+    /*$("#appTrainingForm").validate({
+        messages: {
+            email: {
+                required: 'Enter this!'
+            }
+        }
+    });*/
 })
 
 function toSwiper(selector) {
     $(selector).each(function(indx, elem){
-        $(elem).addClass('swiper-wrapper').removeClass('row').wrap('<div class="swiper-container"></div>').children().addClass('swiper-slide').removeClass('col-md-6');
+        $(elem).addClass('swiper-wrapper').removeClass('row').wrap('<div class="swiper-container"></div>').children().addClass('swiper-slide').removeClass('col-md-6').removeClass('col-lg-6').removeClass('col-xl-3');
 
         $(elem).parent().addClass("instance-" + indx).append('<div class="swiper-pagination"></div>');;
        
@@ -324,7 +419,51 @@ function toSwiper(selector) {
                 el: '.instance-'+indx+' .swiper-pagination'
             },
             slidesPerView: 'auto',
-            spaceBetween: 30
+            spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    spaceBetween: 30
+                }
+            }
         });
     });
+}
+
+function recalc() {
+    var num = 0,
+        trainings = [],
+        i = 0;
+    $('input.count').each(function(indx, elem){
+        var val = parseInt($(elem).val());
+        num = num + val;
+        if(val > 0) {
+            trainings[i] = $(elem).closest('.content_row').find('.title').text() + '##' + $(elem).closest('.content_row').find('.date').text() + '##' + $(elem).closest('.box').find('.box_title').find('.col_content').text().trim() + '##' + val.toString();
+            i++;
+        }        
+        
+    })
+
+    $('#trainingsField').val(trainings.join('||'));
+    $('#eventsNum').text(num + ' ' + getNoun(num, 'событие', 'события', 'событий'));
+    if(num > 0) {
+        $('.register_result').show();
+    } else {
+        $('.register_result').hide();
+    }
+}
+
+function getNoun(number, one, two, five) {
+    let n = Math.abs(number);
+    n %= 100;
+    if (n >= 5 && n <= 20) {
+      return five;
+    }
+    n %= 10;
+    if (n === 1) {
+      return one;
+    }
+    if (n >= 2 && n <= 4) {
+      return two;
+    }
+    return five;
 }
