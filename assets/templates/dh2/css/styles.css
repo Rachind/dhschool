@@ -1,3 +1,4 @@
+@import url('mar.css');
 html,
 body {
 	margin:0;
@@ -1878,6 +1879,7 @@ h3 {
 	line-height: 1.4em;
 	color: #72787E;
 }
+.news_title a {color: #72787E;}
 .consult.subscribe {
 	background: #9C40FF;
 }
@@ -2648,7 +2650,8 @@ footer .contacts {
 	font-family: Roboto;
 }
 .course_first_scr .breadcrumb,
-.main_bnr_dod .breadcrumb {
+.main_bnr_dod .breadcrumb,
+.breadcrumbs_normal .breadcrumb {
 	margin: 0;
 	padding: 0;
 	background: none;
@@ -2656,23 +2659,28 @@ footer .contacts {
 	color: #a0a4a8;
 }
 .course_first_scr .breadcrumb a,
-.main_bnr_dod .breadcrumb a {
+.main_bnr_dod .breadcrumb a,
+.breadcrumbs_normal .breadcrumb {
 	color: #72787e;
 }
 .course_first_scr .breadcrumb a:hover,
-.main_bnr_dod .breadcrumb a:hover {
+.main_bnr_dod .breadcrumb a:hover,
+.breadcrumbs_normal .breadcrumb a:hover {
 	color: #233874;
 }
 .course_first_scr .breadcrumb li,
-.main_bnr_dod .breadcrumb li {
+.main_bnr_dod .breadcrumb li,
+.breadcrumbs_normal .breadcrumb li {
 	white-space: nowrap;
 }
 .course_first_scr .breadcrumb li:not(:last-child),
-.main_bnr_dod .breadcrumb li:not(:last-child) {
+.main_bnr_dod .breadcrumb li:not(:last-child),
+.breadcrumbs_normal .breadcrumb li:not(:last-child) {
 	margin-right: 15px;
 }
 .course_first_scr .breadcrumb li:after,
-.main_bnr_dod .breadcrumb li:after {
+.main_bnr_dod .breadcrumb li:after,
+.breadcrumbs_normal .breadcrumb li:not(:last-child) {
 	display: inline-block;
 	content: '';
 	width: 8px;
@@ -2681,7 +2689,8 @@ footer .contacts {
 	margin-left: 15px;
 }
 .course_first_scr .breadcrumb li:last-child:after,
-.main_bnr_dod .breadcrumb li:last-child:after {
+.main_bnr_dod .breadcrumb li:last-child:after,
+.breadcrumbs_normal .breadcrumb li:last-child:after {
 	display: none;
 }
 .main_bnr_dod {
